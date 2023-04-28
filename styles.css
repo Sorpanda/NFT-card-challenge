@@ -1,0 +1,125 @@
+*, *::before, *::after {
+ box-sizing: border-box;
+   }
+
+ * {
+ margin: 0;
+ }
+
+ html{
+ font-size: 62.5%;
+ }
+    
+ html, body {
+ height: 100%;
+ }
+    
+ body {
+ line-height: 1.5;
+ }
+
+ img, picture, video, canvas, svg {
+ max-width: 100%;
+ }
+    
+ input, button, textarea, select {
+ font: inherit;
+ }
+
+ p, h1, h2, h3, h4, h5, h6 {
+ overflow-wrap: break-word;
+ }
+    
+ :root {
+ --primary-color: hsl(215, 51%, 70%);
+ --accent-color: hsl(178, 100%, 50%);
+    
+ --neutral-main-background: hsl(217, 54%, 11%);
+ --neutral-card-background: hsl(216, 50%, 16%);
+ --neutral-line-color: hsl(215, 32%, 27%);
+ --neutral-color-white: hsl(0, 0%, 100%);
+    
+ --fw-light: 300;
+ --fw-regular: 400;
+ --fw-semibold: 600;
+ }
+    
+body{
+    background-color: var(--neutral-main-background);
+    display: grid;
+    place-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: var(--fw-light);
+    color: var(--primary-color);
+    margin: 1em;
+}
+    
+.card{
+    background-color: var(--neutral-card-background);
+    border-radius: 1em;
+    padding: 1.5em;
+    max-width: 350px;
+}
+    
+.image {
+    border-radius: 0.5em;
+    display: block;
+}
+    
+.title{
+    font-size: 2.2rem;
+    padding: 1em 0 0 0;
+    color: var(--neutral-color-white);
+}
+    
+.description {
+    padding: 1em 0;
+}
+    
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+}
+    
+.ETH-amount{
+    color: var(--accent-color);
+    font-weight: var(--fw-regular);
+}
+    
+.icon {
+    position: relative;
+    right: 0.5rem;
+    vertical-align: middle;
+    height: 1.8rem;
+}
+    
+.profile-container{
+    border-top: 1px solid hsla(215, 51%, 70%, 0.3);
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+}
+    
+.avatar-img {
+    width: 1.8em;
+    height: 1.8em;
+    border: 1px solid var(--neutral-color-white);
+    border-radius: 50%;
+}
+    
+.profile-name{
+    color: var(--neutral-color-white);
+}
+    
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
